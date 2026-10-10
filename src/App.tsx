@@ -11,7 +11,6 @@ import {
   Mail,
   Microscope,
   Network,
-  Shield,
   Stethoscope,
   Video
 } from 'lucide-react';
@@ -29,12 +28,6 @@ const education = [
     degree: 'M.S. in Computer Science',
     period: '2025 - Present',
     detail: 'Coursework and projects across DOSP, MLE, security, computer networks, compiler design, CUDA, AI/ML, and systems.'
-  },
-  {
-    school: 'Savitribai Phule Pune University',
-    degree: 'B.E. in Computer Engineering',
-    period: 'Completed',
-    detail: 'Computer science foundation across software engineering, algorithms, databases, networks, and applied development.'
   }
 ];
 
@@ -97,8 +90,7 @@ const experience = [
     bullets: [
       'Build and own an end-to-end medical imaging pipeline for amyloid detection in Alzheimer patients from MRI data.',
       'Run DICOM-to-NIfTI conversion, FastSurfer brain segmentation in Apptainer on SLURM-managed HiPerGator, and radiomics feature extraction on clinical MRI data.',
-      'Train and evaluate 3D deep learning models, including MONAI 3D EfficientNet and 3D ResNet, to predict amyloid presence from MRI.',
-      'Caught a silent data-integrity bug from a stale HPC git checkout by re-verifying outputs against pipeline logs.'
+      'Train and evaluate 3D deep learning models, including MONAI 3D EfficientNet and 3D ResNet, to predict amyloid presence from MRI.'
     ]
   }
 ];
@@ -239,11 +231,6 @@ const webProjects = {
       link: 'https://collab-board-nine.vercel.app/'
     },
     {
-      name: 'Webhook Gateway',
-      meta: 'Spring Boot 3 · React · Kafka · Redis · Docker',
-      text: 'Event-ingestion platform with HMAC-validated webhooks, Kafka fan-out, Redis-backed retries, and a live monitoring dashboard.'
-    },
-    {
       name: 'BookMyGym',
       meta: 'MERN · JWT · 2025',
       text: 'Gym booking platform with real-time slot availability, owner analytics, and JWT login.',
@@ -261,8 +248,8 @@ const webProjects = {
 const projectGroups = [systemsProjects, aiProjects, webProjects];
 
 const skills = [
-  'Python', 'C++', 'Java', 'TypeScript', 'React', 'Spring Boot', 'FastAPI', 'PyTorch', 'MONAI', 'ROS2',
-  'CUDA', 'Kafka', 'Redis', 'Docker', 'SLURM', 'Apptainer', 'LangChain', 'MoveIt2', 'PostgreSQL', 'MongoDB'
+  'Python', 'C++', 'Java', 'TypeScript', 'React', 'FastAPI', 'PyTorch',
+  'CUDA', 'Kafka', 'Redis', 'Docker', 'LangChain', 'PostgreSQL', 'MongoDB'
 ];
 
 function SectionHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
@@ -303,7 +290,7 @@ export default function App() {
         </section>
 
         <section id="experience" className="content-section">
-          <SectionHeading eyebrow="Experience" title="Professional and research timeline" />
+          <SectionHeading eyebrow="Experience" title="Timeline" />
           <div className="timeline-list">
             {experience.map((item) => {
               const Icon = item.Icon;
@@ -330,7 +317,7 @@ export default function App() {
         </section>
 
         <section id="education" className="content-section soft-section">
-          <SectionHeading eyebrow="Education" title="Academic background" />
+          <SectionHeading eyebrow="Education" title="University" />
           <div className="education-grid">
             {education.map((item) => (
               <article className="education-card" key={item.school}>
@@ -347,7 +334,7 @@ export default function App() {
         </section>
 
         <section id="papers" className="content-section">
-          <SectionHeading eyebrow="Research" title="Papers and research" />
+          <SectionHeading eyebrow="Research" title="Publications" />
           <div className="paper-grid">
             {papers.map((paper) => (
               <article className="paper-card" key={paper.title}>
@@ -361,7 +348,7 @@ export default function App() {
         </section>
 
         <section id="projects" className="content-section soft-section">
-          <SectionHeading eyebrow="Projects" title="Systems first, then AI/ML, then web apps" />
+          <SectionHeading eyebrow="Projects" title="Selected work" />
           <div className="project-groups">
             {projectGroups.map((group) => {
               const Icon = group.icon;
