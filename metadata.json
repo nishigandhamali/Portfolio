@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "Nishigandha Mali Portfolio",
+  "description": "A React and Three.js engineering portfolio for software engineering, AI/ML, full-stack systems, and applied research projects.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": ["portfolio", "react", "threejs", "ai-ml"]
 }
