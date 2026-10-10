@@ -74,7 +74,7 @@ const experience = [
     period: 'Aug 2026 - Present',
     label: 'AD biomarker discovery pipeline',
     bullets: [
-      'Build and own an end-to-end medical imaging pipeline for amyloid detection in Alzheimer’s patients from MRI data.',
+      'Build and own an end-to-end medical imaging pipeline for amyloid detection in Alzheimer patients from MRI data.',
       'Run DICOM-to-NIfTI conversion, FastSurfer brain segmentation in Apptainer on SLURM-managed HiPerGator, and radiomics feature extraction on clinical MRI data.',
       'Train and evaluate 3D deep learning models, including MONAI 3D EfficientNet and 3D ResNet, to predict amyloid presence from MRI.',
       'Caught a silent data-integrity bug from a stale HPC git checkout by re-verifying outputs against pipeline logs.'
@@ -227,6 +227,11 @@ const projectGroups = [
         name: 'CUDA Spectral Band Correlation',
         meta: 'CUDA · Hyperspectral imaging · In progress',
         text: 'GPU kernel for correlation across 215 hyperspectral bands, extending the crop-stress band-selection project.'
+      },
+      {
+        name: 'LLM Inference Platform',
+        meta: 'vLLM · TensorRT-LLM · Triton · Planned',
+        text: 'Planned inference-serving platform focused on high-throughput LLM deployment, batching, and GPU-aware serving.'
       }
     ]
   }
