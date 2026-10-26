@@ -219,6 +219,18 @@ const webProjects = {
   icon: Briefcase,
   projects: [
     {
+      name: 'Privany',
+      meta: 'Chrome extension · React · TypeScript · Express · Puppeteer · Hackathon 2026',
+      text: 'Checks whether a site keeps its privacy promises: tests cookies with and without the Global Privacy Control signal, reads the policy with a rule-based reader, and shows verified quotes. Choose your own no-goes and see which ones a site breaks.',
+      link: 'https://devpost.com/software/privany'
+    },
+    {
+      name: 'EchoCrime',
+      meta: 'React Three Fiber · Three.js · 3D',
+      text: 'Third-person 3D detective mystery game.',
+      link: 'https://echocrime.onrender.com/'
+    },
+    {
       name: 'DanceIQ',
       meta: 'Spring Boot · FastAPI · YOLOv8 · MediaPipe · PostgreSQL · Docker',
       text: 'Four-service Docker Compose system. A computer-vision service extracts 33 body keypoints per frame; DTW scores performance against a reference video.',
